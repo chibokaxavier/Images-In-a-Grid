@@ -1,0 +1,64 @@
+
+#main-div{
+ width: 200px;
+ height: 200px;
+ background-color: white;
+ position: relative;
+ display:inline-block;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+p{
+    display: inline-block;
+    float: right;
+}
+.childrendivv{
+    background-color: blueviolet;
+    bottom: -9000px;
+    top: auto;
+    left: auto;
+    right:auto;
+    top:auto;
+    position: auto;
+    transform: translateY(-1000%);
+    opacity: 0;
+}
+.childrendiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    transition-timing-function: ease;
+    transition: all 3s;
+    
+}
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity : 1;}
+}
+
+
+#grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:white;
+    padding: 10px;
+}
+.grid-item {
+    /* background-color:yellow; */
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+.faded{
+    opacity: 0;
+}
